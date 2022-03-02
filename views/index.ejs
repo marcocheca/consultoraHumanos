@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include("./partials/header.ejs") %>
+  <main>
+    <div class="search-container">
+      <div class="osc"> </div>
+      <img class="img-main"src="images/fondoh.jpg">
+      <form class="barraBusqueda" action="/search" method="GET">        
+        <input type="search"name="search" id="search" placeholder="Search..." class="hh1 cc1"> 
+        <select name="area" id="area" class ="hh1" placeholder="area">
+          <option value="">Area 1</option>
+          <option value="">Area 2</option>
+          <option value="">Area 3</option>
+          <option value="">Area 4</option>
+        </select>
+        <select name="location" id="location" class ="hh1" placeholder="location">
+          <option value="">Lugar 1</option>
+          <option value="">Lugar 2</option>
+          <option value="">Lugar 3</option>
+          <option value="">Lugar 4</option>
+        </select>
+        <button class="hh1 cc2" type="submit">search jobs</button>
+      </form>
+    </div>
+
+  </main>
+  <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
